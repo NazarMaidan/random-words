@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+}
+
+.wrap{
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.word__wrap{
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.buttons{
+  width: 70%;
+  height: 200px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn{
+  padding: 20px 50px;
+  background: rgb(67, 136, 192);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.btn:focus{
+  outline: none;
+}
+
+.btn:hover{
+  background: rgb(35, 132, 211);
+}
+
+.btn:active{
+  transform: scale(.95);
+}
+
+.field, .correct{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: Verdana, 'Segoe UI', Tahoma, Geneva, sans-serif;
+  font-size: 3.5vw;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+}
+
+.field__word {
+  text-align: center;
+}
+
+.correct{
+  font-size: 2.5vw;
+  height: 100px;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  .buttons{
+    width: 100%;    
+    flex-direction: column;
+    align-items:initial;
+    justify-content: space-around;
+  }
+  .field__word {
+    text-align: center;
+    letter-spacing: .15em;
+  }
+}
